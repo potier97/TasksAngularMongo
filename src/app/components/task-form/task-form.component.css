@@ -1,0 +1,33 @@
+.card-container{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.example-header-image {
+    text-align: left;
+    color: green;
+    font-weight: bold;
+
+}
+
+.example-form {
+    width: 100%;
+}
+
+.example-full-width{
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.btn-block {
+    color: #fff;
+    font-size: large;
+    padding: 8px 24px; 
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+

@@ -1,0 +1,13 @@
+.appbar {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.container-appbar{ 
+    padding-left: 16px;
+    padding-right: 16px;
+    color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

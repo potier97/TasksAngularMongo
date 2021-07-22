@@ -1,0 +1,17 @@
+<mat-card class="card-container">
+    <mat-card-header class="card-header d-flex justify-content-between align-items-center">
+        <h3>Tarea </h3>
+        <div>
+            <button (click)="task.hide = !task.hide" class="btn btn-info m-2">
+                Mostrar
+            </button>
+            <button (click)="deleteTask(task)" class="btn btn-warning  m-2">
+                Eliminar
+            </button>
+        </div>
+    </mat-card-header>
+    <mat-card-content class="card-body" [hidden]="task.hide">
+        <p>{{task.description}}</p>
+    </mat-card-content>
+</mat-card>
+ 
