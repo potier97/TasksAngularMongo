@@ -1,17 +1,38 @@
 <mat-card class="card-container">
-    <mat-card-header class="card-header d-flex justify-content-between align-items-center">
-        <h3>Tarea </h3>
-        <div>
-            <button (click)="task.hide = !task.hide" class="btn btn-info m-2">
+    <mat-card-header fxLayout="row" class="tittle-container">
+        <h3  fxFlex="50" fxLayout="row" fxLayoutAlign="start center" class="tittle" >Tarea {{task._id}}</h3>
+        <div fxFlex="50" fxLayoutGap="16px" fxLayout="row" fxLayoutAlign="end stretch" >
+            <button 
+                (click)="task.hide = !task.hide" 
+                mat-raised-button 
+                class="btn-block"
+                color="accent">
                 Mostrar
             </button>
-            <button (click)="deleteTask(task)" class="btn btn-warning  m-2">
+            <button 
+                (click)="deleteTask(task)" 
+                mat-raised-button 
+                class="btn-block"
+                color="warn">
                 Eliminar
             </button>
         </div>
     </mat-card-header>
-    <mat-card-content class="card-body" [hidden]="task.hide">
+    <mat-card-content class="card-body" fxLayout="column" fxLayoutAlign="space-around stretch" *ngIf="task.hide">
+        <p> Responsable {{task.author}}</p>
+        <p> {{task.done ? "Finalizada" : "En Proceso"}}</p>
         <p>{{task.description}}</p>
+
+        <div fxLayout="row" fxLayoutAlign="end center" >
+            <button 
+                fxFlex="30"
+                (click)="updateTask(task)" 
+                mat-raised-button 
+                class="btn-block"
+                color="primary">
+                 {{!task.done ? "Finalizar" : "Retornar"}}
+            </button>
+        </div>
     </mat-card-content>
 </mat-card>
  

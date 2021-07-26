@@ -1,5 +1,5 @@
 export interface TaskResponse {
-    id: number,
+    _id: number | null,
     description: string,
     author: string,
     done: boolean,

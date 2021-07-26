@@ -1,0 +1,31 @@
+.card-container{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.btn-block {
+    color: #fff;
+    font-size: large;
+    padding: 4px 16px; 
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.tittle {
+    margin: 0px;
+    font-weight: bold;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.tittle-container {
+    margin-bottom: 32px;
+}
+
+.card-body{
+    margin-left: 16px;
+}
